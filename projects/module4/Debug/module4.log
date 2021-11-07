@@ -1,0 +1,3 @@
+﻿  module4.cpp
+C:\Users\Vadym\source\repos\module4\module4.cpp(32): warning C4715: getMonsterType: значение возвращается не при всех путях выполнения
+  module4.vcxproj -> C:\Users\Vadym\source\repos\module4\Debug\module4.exe
