@@ -31,13 +31,13 @@ void gameLoop()
 
         if (i == a)
         {
-            cout << "Well done! Would you restart?(1 is for no and other value is for yes) " << "\n";
+            cout << "Well done! Would you restart? " << "\n";
             break;
         }
         
         if (i != a && p == 7)
         {
-            cout << "Sorry, correct answer is " << a << ". Would you restart?(1 is for no and other value is for yes) " << "\n";
+            cout << "Sorry, correct answer is " << a << ". Would you restart? " << "\n";
             break;
         }
     }
@@ -46,12 +46,17 @@ void gameLoop()
 
 void game()
 {
-    int choice;
+    char choice;
     do
     {
         gameLoop();
         cin >> choice;
-    } while (choice != 1);
+        if (choice != 'y' && choice != 'n')
+        {
+            cout << "Wrong answer!" << "\n";
+            break;
+        }
+    } while (choice != 'n');
 
     cout << "Have a nice day!";
 }
